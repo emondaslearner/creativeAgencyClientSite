@@ -1,0 +1,48 @@
+.addAdmin{
+    width:100%;
+    overflow: hidden;
+}
+.addAdmin .addAdminBody .add{
+    width:100%;
+    background-color:#ddd;
+    height:90vh;
+    display:flex;
+}
+.addAdmin .addAdminBody .add form{
+    width:50%;
+    margin:auto;
+    padding:20px 0;
+}
+.addAdmin .addAdminBody .add form input{
+    padding:15px;
+    width:100%;
+    border:none;
+    margin:10px;
+    border-radius:5px;
+}
+
+.addAdmin .addAdminBody .add form input:last-child{
+    width:30%;
+    margin-bottom:50px;
+    border:2px solid black;
+}
+
+.addAdmin .addAdminBody .add form input:last-child:hover{
+    background-color:#ddd;
+}
+
+@media screen and (max-width:1250px) {
+    .addAdmin .addAdminBody .add form{
+        width:60%;
+    }
+}
+@media screen and (max-width:768px) {
+    .addAdmin .addAdminBody{
+        width:100%;
+    }
+}
+@media screen and (max-width:500px) {
+    .addAdmin .addAdminBody .add form{
+        width:85%;
+    }
+}

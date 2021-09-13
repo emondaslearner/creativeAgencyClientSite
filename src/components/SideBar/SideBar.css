@@ -1,0 +1,91 @@
+.sideBar{
+    height:100vh; 
+    position:fixed;  
+}
+.sideBar img{
+    width:150px;
+    display:block;
+    margin:20px auto;
+}
+.sideBar nav li{
+    margin-left:30px;
+    list-style:none;
+    cursor: pointer;
+    transition:.3s color;
+}
+.sideBar nav a{
+    padding-left:10px;
+    text-decoration: none;
+    color:black;
+    transition:.3s color;
+}
+.sideBar nav li:hover{
+    color:forestgreen;
+}
+.sideBar nav a:hover{
+    color:forestgreen;
+}
+.showSideBar{
+    display:none;
+}
+.hideSideBar{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+  .mainSideBar{
+        opacity:0;
+        display:none;
+        width:50%;
+        position: absolute;
+        z-index:999;
+  } 
+  .sideBar{
+      background-color: white;
+      width:50%;
+      z-index:999;
+  }
+  .showSideBar{
+      display:block;
+      position:absolute;
+      left:10px;
+      top:10px;
+  }
+  .showSideBar a{
+      font-size:30px;
+      color:black
+  }
+  .showSideBar a:hover{
+      color:rgb(64, 64, 192)
+  } 
+  .hideSideBar{
+      position:absolute;
+      right:20px;
+      top:5px;
+      display: block;
+  }
+  .hideSideBar a{
+      font-size:30px;
+      color:black;
+  }
+  .hideSideBar a:hover{
+    color:rgb(64, 64, 192)
+  } 
+  .showSlowlySideBar{
+      animation-name:showSlow;
+      animation-duration:1s;
+  }
+}
+@media screen and (max-width:500px) {
+    .sideBar{
+        width:100%;
+    }
+}
+@keyframes showSlow {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}

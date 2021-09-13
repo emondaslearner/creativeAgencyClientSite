@@ -1,0 +1,39 @@
+.AdminLogin{
+    width:100%;
+    background-color:#ddd;
+    height:100vh;
+    display: flex;
+}
+.AdminLogin form{
+    width:50%;
+    margin:auto;
+    padding:20px 0;
+}
+.AdminLogin form input{
+    padding:15px;
+    width:100%;
+    border:none;
+    margin:10px;
+    border-radius:5px;
+}
+
+.AdminLogin form input:last-child{
+    width:30%;
+    margin-bottom:50px;
+    border:2px solid black
+}
+
+.AdminLogin form input:last-child:hover{
+    background-color:#ddd;
+}
+
+@media screen and (max-width:1250px) {
+    .AdminLogin form{
+        width:60%;
+    }
+}
+@media screen and (max-width:500px) {
+    .AdminLogin form{
+        width:85%;
+    }
+}

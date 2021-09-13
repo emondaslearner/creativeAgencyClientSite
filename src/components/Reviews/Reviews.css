@@ -1,0 +1,43 @@
+.reviews{
+    width:100%;
+    overflow:hidden;
+}
+.mainReview{
+    background-color:#ddd;
+    height:93vh;
+    padding:50px 0;
+}
+.mainReview form{
+    width:50%;
+    display: block;
+    margin: auto;
+}
+.mainReview form input,textarea{
+    padding:15px;
+    width:100%;
+    border:none;
+    margin:10px;
+    border-radius:5px;
+}
+.mainReview form .send:last-child{
+    width:30%;
+    margin-bottom:50px;
+}
+.mainReview form .send:last-child:hover{
+    background-color:#ddd;
+}
+@media screen and (max-width:1250px) {
+    .mainReview form{
+        width:60%;
+    }
+}
+@media screen and (max-width:768px) {
+    .reviewsBody{
+        width:100%;
+    }
+}
+@media screen and (max-width:500px) {
+    .mainReview form{
+        width:85%;
+    }
+}

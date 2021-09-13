@@ -1,0 +1,150 @@
+.serviceList{
+    width:100%;
+    overflow: hidden;
+    margin-right:0;
+}
+.allServices{
+    width:100%;
+    background-color:#ddd;
+    padding-bottom:200px;
+}
+.serviceList .allServices .service{
+    width:30%;
+    padding:10px;
+    margin:10px;
+    background-color: white;
+    border-radius:5px;
+    position: relative;
+}
+.serviceList .allServices .service img{
+    width:70px;
+    margin:10px;
+}
+.serviceList .allServices .service h5{
+    font-size:18px;
+}
+.serviceList .allServices .service p{
+    color:gray;
+}
+.serviceList .allServices .service select{
+    position:absolute;
+    right:10px;
+    top:10px;
+    width:50%;
+    text-align:center;
+}
+.serviceList .allServices .service .delete{
+    position:absolute;
+    right:10px;
+    top:55px;
+    width:30%;
+    text-decoration:none;
+    background-color:#e74c3c;
+    color:white;
+    transition:.3s all ease;
+}
+.serviceList .allServices .service .delete:hover{
+    background-color:white;
+    border:2px solid #e74c3c;
+    color:#e74c3c;
+}
+.allServiceList{
+    width:100%;
+    background-color:#ddd;
+    height:100%;
+    padding:10px;
+}
+.allServiceList table{
+    width:98%;
+    text-align: center;
+    padding:10px;
+    display: block;
+    background-color:white;
+    margin:auto;
+    border-radius:5px;
+}
+.allServiceList table td{
+    width:20%;
+    padding:10px;
+    padding-top:15px;
+}
+.allServiceList table .details{
+    width:30%;
+    text-align:start;
+}
+.allServiceList table .select{
+    width:10%;
+}
+.allServiceList table .select select{
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ddd;
+    background-color:white;
+}
+.allServiceList table .firstRow td{
+    background-color:#ddd;
+    margin:10px;
+}
+.allServiceList .leftArrow{
+    display:none;
+}
+.allServiceList table .tableDelete{
+    width:100%;
+    text-decoration:none;
+    background-color:#e74c3c;
+    color:white;
+    transition:.3s all ease;
+    border:2px solid #e74c3c;
+    border-radius:5px;
+    padding:7px 15px
+}
+.allServiceList table .tableDelete:hover{
+    background-color:white;
+    border:2px solid #e74c3c;
+    color:#e74c3c;
+}
+.load{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.loading{
+    width:500px;
+}
+@media screen and (max-width:1220px) {
+    .allServiceList table{
+        width:1000px;
+    }
+    .allServiceList{
+        overflow-x:scroll;
+        position:relative;
+    }
+    .allServiceList .leftArrow{
+        display:block;
+        width:100%;
+    }
+    .allServiceList .leftArrow a{
+        color: black;
+        text-decoration:none;
+        display: block;
+    }
+}
+@media screen and (max-width:990px) {
+    .serviceList .allServices .service{
+        width:45%;
+    }
+}
+@media screen and (max-width:768px){
+    .serviceListBody{
+        width:100%;
+    }
+    .allServices{
+        padding-left:20px;
+    }
+}
+@media screen and (max-width:550px){
+    .serviceList .allServices .service{
+        width:80%;
+        margin: 20px auto;
+    }
+}

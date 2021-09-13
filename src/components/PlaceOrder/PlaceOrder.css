@@ -1,0 +1,110 @@
+.placeOrder{
+    overflow: hidden;
+    width:100%;
+    margin-right:0;
+    margin-left:0;
+    --bs-gutter-x:0rem;
+}
+.dashboardHeader{
+    display:flex;
+    padding:20px;
+}
+.dashboardHeader h6{
+    width:80%;
+    padding-top:5px;
+    text-align:right;
+}
+.placeOrder .order{
+    background-color:#ddd;
+    height:100%;
+}
+
+.placeOrder .order form{
+    width:50%;
+    display: block;
+    margin: auto;
+}
+.placeOrder .order form input,textarea{
+    padding:15px;
+    width:100%;
+    border:none;
+    margin:10px;
+    border-radius:5px;
+}
+.placeOrder .order form .priceAndUpload{
+    display:flex;
+}
+.placeOrder .order form .priceAndUpload input{
+    width:50%;
+}
+.placeOrder .order form .priceAndUpload .first input{
+    width:100%;
+    height:60px;
+}
+.placeOrder .order form{
+    padding-top:20px;
+}
+.placeOrder .order form .priceAndUpload input:last-child::before {
+    content: 'Upload project file';
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #08974A;
+    color: #08974A;
+    border-radius: 5px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 600;
+    background-color: #DEFFED;
+    font-size: 16px;
+    padding:18px 30px;
+    margin-top:-15px;
+    margin-left:15px;
+}
+
+.placeOrder .order form .priceAndUpload input:hover::before {
+    border-color: black;
+}
+
+.placeOrder .order form .priceAndUpload input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.placeOrder .order form .priceAndUpload input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.placeOrder .order form .send:last-child{
+    width:30%;
+    margin-bottom:50px;
+}
+.placeOrder .order form .send:last-child:hover{
+    background-color:#ddd;
+}
+
+@media screen and (max-width:1250px) {
+    .dashboardHeader h5{
+        margin-left:40px;
+    }
+    .placeOrder .order form{
+        width:60%;
+    }
+    .placeOrder .order form .priceAndUpload{
+        display: block;
+    }
+    .placeOrder .order form .priceAndUpload input{
+        width:100%;
+    }
+}
+@media screen and (max-width:768px) {
+    .placeOrder .orderBody{
+        width:100%;
+    }
+}
+@media screen and (max-width:500px) {
+    .placeOrder .order form{
+        width:85%;
+    }
+}

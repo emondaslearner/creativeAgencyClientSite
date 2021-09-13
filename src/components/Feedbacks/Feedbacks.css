@@ -1,0 +1,46 @@
+.feedbacksMain{
+    overflow: hidden;
+}
+.feedbacksMain h2 span{
+    color:forestgreen;
+}
+.feedbacksMain .feedbacks{
+    justify-content: center;
+    margin:50px 0;
+} 
+.feedbacksMain .feedbacks .feedback{
+    border:1px solid #ddd;
+    padding:20px;
+    margin:20px;
+    border-radius:5px;
+}
+.feedbacksMain .feedbacks .feedback p{
+    color:grey;
+    margin:10px 0;
+}
+.feedbacksMain .feedbacks img{
+    border-radius:50%;
+}
+.feedbacksMain .feedbacks .clientInformation .clientName h5{
+    margin-left:10px;
+    margin-top:20px;
+}
+@media screen and (max-width:1111px) {
+    .feedbacksMain .feedbacks .feedback{
+        width:40%;
+    }
+}
+@media screen and (max-width:784px) {
+    .feedbacksMain .feedbacks .feedback{
+        width:70%;
+    }
+    .feedbacksMain .feedbacks img{
+        width:30%;
+    }
+    .feedbacksMain .feedbacks .clientInformation{
+        display:flex;
+    }
+    .feedbacksMain .feedbacks .clientInformation .clientName{
+        width:70%
+    }
+}

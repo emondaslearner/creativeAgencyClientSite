@@ -1,0 +1,113 @@
+.handle{
+    width:100%;
+    background-color:#ddd;
+    height:100%;
+    padding:10px;
+}
+.handle table{
+    width:98%;
+    text-align: center;
+    padding:10px;
+    display: block;
+    background-color:white;
+    margin:auto;
+    border-radius:5px;
+}
+.handle table td{
+    width:20%;
+    padding:10px;
+    padding-top:15px;
+}
+.handle table .details{
+    width:30%;
+    text-align:start;
+}
+.handle table .select{
+    width:10%;
+}
+.handle table .select select{
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ddd;
+    background-color:white;
+}
+.handle table .firstRow td{
+    background-color:#ddd;
+    margin:10px;
+}
+.handle .leftArrow{
+    display:none;
+}
+.handle table .tableDelete{
+    width:100%;
+    text-decoration:none;
+    background-color:#e74c3c;
+    color:white;
+    transition:.3s all ease;
+    border:2px solid #e74c3c;
+    border-radius:5px;
+    padding:7px 15px
+}
+.handle table .tableDelete:hover{
+    background-color:white;
+    border:2px solid #e74c3c;
+    color:#e74c3c;
+}
+.apSuccess{
+    width:100%;
+    text-decoration:none;
+    background-color:#27ae60;
+    color:white;
+    transition:.3s all ease;
+    border:2px solid #27ae60;
+    border-radius:5px;
+    padding:7px 15px;
+    transition:.3s all ease;
+}
+.apSuccess:hover{
+    color:#27ae60;
+    border:2px solid #27ae60;
+    background-color:white;
+}
+.apDanger{
+    width:100%;
+    text-decoration:none;
+    background-color:#e67e22;
+    color:white;
+    transition:.3s all ease;
+    border:2px solid #e67e22;
+    border-radius:5px;
+    padding:7px 15px;
+    transition:.3s all ease;
+}
+.apDanger:hover{
+    color:#e67e22;
+    border:2px solid #e67e22;
+    background-color:white;
+}
+@media screen and (max-width:1220px) {
+    .handle table{
+        width:1000px;
+    }
+    .handle{
+        overflow-x:scroll;
+        position:relative;
+    }
+    .handle .leftArrow{
+        display:block;
+        width:100%;
+    }
+    .handle .leftArrow a{
+        color: black;
+        text-decoration:none;
+        display: block;
+    }
+}
+@media screen and (max-width:768px){
+    .handleReviewsBody{
+        width:100%;
+    }
+    .handle{
+        padding-left:20px;
+    }
+}

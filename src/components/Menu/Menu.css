@@ -1,0 +1,115 @@
+.menu{
+    display:flex;
+    width:100%;
+    justify-content: center;
+}
+.menu .menu-content{
+    display:flex;
+    width:85%;
+    padding-top:30px;
+}
+.menu .menu-content img{
+    width:150px;
+    display: block;
+}
+.menu .menu-content nav{
+    display:flex;
+    justify-content: flex-end;
+    width:90%;
+}
+.menu .menu-content nav li{
+    list-style:none;
+    padding:10px;
+}
+.menu .menu-content nav li a{
+    text-decoration:none;
+    color:gray;
+    transition:.3s color;
+}
+.menu .menu-content nav li a:hover{
+    color:black;
+    border-bottom:2px solid green;
+}
+.button {
+    padding:10px 30px;
+    border-radius:5px;
+    color:white !important;
+    background-color: black;
+    border:2px solid black;
+}
+.button:hover{
+    background-color:rgb(230,197,16);
+    border:2px solid black !important;
+    color:black !important;
+}
+.bar{
+    display:none;
+}
+.close{
+    display:none;
+}
+@media screen and (max-width:800px) {
+    .menu .menu-content nav{
+        opacity: 0;
+        display:none;
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        background-color: black;
+        padding:20px 50px;
+    }
+    .menu .menu-content nav li a:last-child{
+        background-color:inherit;
+        margin:0;
+        padding:0;
+        color:gray !important;
+    }
+    .menu .menu-content nav a{
+        display:inline-block;
+    }
+    .menu .menu-content nav li a:hover{
+        border-bottom:none;
+        color:rgb(224, 219, 219) !important;
+    }
+    .animate{
+        animation-name:showMenu;
+        animation-duration:1s;
+    } 
+    .bar{
+        font-size:30px;
+        display:flex;
+        justify-content: flex-end;
+        width:90%;
+    }
+    .bar a{
+        font-size:30px;
+        color:black;
+    }
+    .bar a:hover{
+        color:rgb(50, 50, 195);
+    }
+    .close{
+        position:absolute;
+        right:20px;
+        top:10px;
+        display:block;
+    }
+    .close a{
+        font-size:30px;
+        color:gray;
+    }
+    .close a:hover{
+        color:rgb(224, 219, 219);
+    }
+}
+
+
+@keyframes showMenu {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}

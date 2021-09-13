@@ -1,0 +1,50 @@
+.row{
+    --bs-gutter-x:0rem;
+}
+.connectMain{
+    width:100%;
+    overflow: hidden;
+    justify-content: center;
+    background-color:rgb(230,197,16);
+}
+.connectMain .content{
+    margin-top:50px;
+}
+.connectMain .connect{
+    margin:50px 0;
+    margin-left:70px;
+}
+.connectMain .connect form input,textarea{
+    width:100%;
+    padding:15px;
+    border:none;
+    margin:15px;
+    border-radius:5px;
+}
+.connectMain .connect form input:last-child{
+    width:30%;
+}
+.error{
+    font-style:italic;
+}
+@media screen and (max-width:768px) {
+    .connectMain .content{
+        width:70%;
+    }
+    .connectMain .connect{
+        width:70%;
+        margin:0;
+    }
+}
+@media screen and (max-width:516px){
+    .connectMain .content{
+        width:90%;
+    }
+    .connectMain .connect{
+        width:90%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin:0;
+    }
+}

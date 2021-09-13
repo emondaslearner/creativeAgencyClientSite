@@ -1,0 +1,76 @@
+.portfolioMain{
+    background-color: black;
+    overflow: hidden;
+}
+.portfolioMain h2 span{
+    color:forestgreen;
+}
+.portfolioMain .portfolio{
+    display:flex;
+    padding:20px;
+    margin-left:20px;
+}
+.portfolio img{
+    width:28%;
+    height:250px;
+    border-radius:10px;
+    display:block;
+    margin:3%;
+    transition:.7s margin linear;
+}
+.portfolioMain .point{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    padding-bottom:50px;
+}
+.portfolioMain .point a{
+    display: block;
+    width:20px;
+    height:20px;
+    border-radius:50px;
+    background-color:lightslategray;
+    margin:10px;
+}
+.portfolioMain .point .active{
+    width:50px;
+    background-color:rgb(230,197,16) !important;
+    border-radius:50px;
+    position: relative;
+    animation-name:slideSlowly;
+    animation-duration:.5s;
+}
+.disActive{
+    background-color:lightslategray;
+    position: relative;
+    animation-name:hideSlowly;
+    animation-duration:.5s;
+}
+@media screen and (max-width:868px) {
+    .portfolioMain .portfolio img{
+        width:42%;
+    }
+}
+@media screen and (max-width:534px) {
+    .portfolioMain .portfolio img{
+        width:95%;
+    }
+}
+
+@keyframes slideSlowly {
+    0%{
+        width:20px;
+    }
+    100%{
+        width:50px;
+    }
+}
+
+@keyframes hideSlowly {
+    0%{
+        width:50px;
+    }
+    100%{
+        width:20px;
+    }
+}
